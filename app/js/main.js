@@ -1,23 +1,5 @@
-var appModule = angular.module('app', ['ui.router']);
+var mainModule = require('./main/main_module.js')
+var config = require('./config/config_module.js')
 
 
-appModule.config(function($stateProvider, $locationProvider) {
-
-  var helloState = {
-    name: 'hello',
-    url: '/hello',
-    template: '<h3>hello world!</h3>'
-  }
-
-  var aboutState = {
-    name: 'about',
-    url: '/about',
-    template: '<h3>Its the UI-Router hello world app!</h3>'
-  }
-
-  $stateProvider.state(helloState);
-  $stateProvider.state(aboutState);
-});
-
-require('./controllers/home/home.controller.js');
-
+module.exports = angular.module('app', ['ui.router', mainModule.name, config.name]);

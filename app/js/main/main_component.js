@@ -5,8 +5,8 @@ module.exports = angular
     controller: ['$scope', '$http', 'app.config', MainController ],
     transclude: true
   });
-
 function MainController ($scope, $http, config) {
+  debugger;
   $http({
     method: 'GET',
     url: config.baseURL

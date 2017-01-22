@@ -3,5 +3,8 @@ module.exports = {
     output: {
         path: __dirname,
         filename: "bundle.js"
-    }
+    },
+    loaders: [
+        { test: /\.css$/, loader: "style-loader!css-loader" }
+    ]
   };

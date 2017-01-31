@@ -1,4 +1,3 @@
-
 var route = require('./main_route.js')
 var component = require('./main_component.js')
 

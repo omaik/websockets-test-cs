@@ -1,10 +1,10 @@
 module.exports = angular
-  .module('app.home.route', [])
+  .module('app.chat.route', [])
   .config(function($stateProvider, $urlRouterProvider) {
       $stateProvider.state({
-        name: 'home',
-        url: '/home',
-        template: '<app-home></app-home>',
+        name: 'chat',
+        url: '/chat/{id}',
+        template: '<app-chat></app-chat>',
         authenticate: true
       });
   });

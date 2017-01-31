@@ -1,10 +1,13 @@
 require('angular');
+require('angular-route');
 require('angular-ui-router');
 
-require("css!angular-material/angular-material.css");
+require('angular-material-design-lite');
+require('angular-material');
+require('angular-material/angular-material.css');
+require('./app/css/home.css');
 
-require('angular-aria/angular-aria.js');
-require('angular-animate/angular-animate.js');
-require('angular-material/angular-material.js');
 
 require('./app/js/main.js');
+
+

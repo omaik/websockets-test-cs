@@ -6,7 +6,6 @@ module.exports = angular
     transclude: true
   });
 function MainController ($scope, $http, config) {
-  debugger;
   $http({
     method: 'GET',
     url: config.baseURL

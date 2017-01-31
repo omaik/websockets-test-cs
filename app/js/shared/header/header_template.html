@@ -1,0 +1,19 @@
+ <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+ <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">Home</span>
+    <div class="mdl-layout-spacer"></div>
+    <md-menu>
+      <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+        sffdsffd
+      </md-button>
+      <md-menu-content width="2">
+        <md-menu-item ng-repeat="item in [1, 2, 3]">
+          <md-button ng-click="ctrl.announceClick($index)">
+            <md-icon md-menu-align-target md-svg-icon="call:no-sim"></md-icon>
+            Option
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </div>
+</header>

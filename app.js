@@ -5,6 +5,7 @@ require('angular-ui-router');
 require('angular-material-design-lite');
 require('angular-material');
 require('angular-material/angular-material.css');
+require('actioncable-js');
 require('./app/css/home.css');
 
 

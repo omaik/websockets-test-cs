@@ -6,5 +6,5 @@ module.exports = angular
     transclude: true
   });
 
-function ChatController ($scope, $http, config) {
+function ChatController ($scope) {
 };
